@@ -13,13 +13,13 @@ export default function Home() {
     <div className="home__header">
 
       <div className="home__headerLeft">
-      <a href='https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header'>About</a>
-      <a href='https://store.google.com/US/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US&pli=1'>Store</a>
+      <Link to='/about'>About</Link>
+      <Link to='/store'>Store</Link>
       </div>
 
       <div className="home__headerRight">
-        <a href='https://mail.google.com/mail/?authuser=0&ogbl'>Gmail</a>
-        <a href='https://www.google.com/imghp?hl=en&authuser=0&ogbl'>Images</a>
+        <Link to='/gmail'>Gmail</Link>
+        <Link to='/images'>Images</Link>
         <AppsIcon />
       <AccountCircleIcon />
       </div>
