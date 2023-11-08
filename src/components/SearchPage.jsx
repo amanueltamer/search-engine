@@ -101,7 +101,7 @@ export default function SearchPage() {
                   {item.displayLink}
               </a>
 
-              <a className="searchPage__resultTitle" href={item.link}>
+              <a className="searchPage__resultTitle" href={item.link} target="_blank">
                 <h2>{item.title}</h2>
               </a>
               <p className="searchPage__resultSnippet">{item.snippet}</p>
