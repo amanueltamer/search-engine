@@ -29,7 +29,7 @@ const Search = ({ hideButtons = false }) => {
     <form className="search">
       <div className="search__input">
         <SearchIcon className="search__inputIcon" />
-        <input value={input} onChange={e => setInput(e.target.value)} />
+        <input placeholder="Search Google or type a URL" value={input} onChange={e => setInput(e.target.value)} />
         <MicIcon />
       </div>
       {!hideButtons ? (
@@ -39,7 +39,7 @@ const Search = ({ hideButtons = false }) => {
           </Button>
           <Button variant="outlined">I'm Feeling Lucky</Button>
         </div>
-      ): (
+      ) : (
         <div className="search__buttons">
         <Button className="search__buttonsHidden" type="submit" onClick={search} variant="outlined">
           Google Search
